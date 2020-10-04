@@ -1,0 +1,57 @@
+/* Main Container */
+* {
+    box-sizing: border-box;
+}
+.nav__header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #272d35;
+    color: #fff;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.nav__header a {
+    text-decoration: none;
+}
+.nav__header a:visited {
+    color: #fff;
+}
+.nav__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.nav__icon {
+    display: flex;
+}
+.nav__greeting {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+/* searchbar and search logo */
+.nav__header__list {
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    
+}
+.nav__header__list ul {
+    display: flex;
+} 
+.nav__header__list li {
+    box-sizing: content-box;
+    font-weight: bold;
+    margin: 0 10px;
+    list-style-type: none;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.nav__header__list li:hover {
+    outline: 0px solid transparent;
+    border: 1px solid #f1f1f1;
+}
