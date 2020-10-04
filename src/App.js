@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Header from "./components/Header";
 import Home from "./Home";
+import Payment from './components/Payment';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Checkout from './components/Checkout';
@@ -43,6 +44,10 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/payment">
+            <Header />
+            <Payment />
           </Route>
           <Route path="/">
             <Header />

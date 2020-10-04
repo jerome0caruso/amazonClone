@@ -3,13 +3,14 @@ import CurrencyFormat from 'react-currency-format';
 import './css/Subtotal.css';
 import { useStateValue } from '../StateProvider';
 import { getBasketTotal } from '../reducer';
+import { useHistory } from 'react-router-dom';
 
 
 function Subtotal() {
     const [{ basket }] = useStateValue();
-    // let sum = 0;
-    // basket.map(items => sum += items.price)
-    // console.log(sum)
+    //keeps track of past site and keeps it as a button not a link but still has redirect fn.?
+    const history = useHistory();
+
     return (
         <div className="subtotal">
 
@@ -30,7 +31,7 @@ function Subtotal() {
                 thousandSeparator={true}
                 prefix={"$"}
             />
-            <button>Proceed to Checkout</button>
+            <button onClick={e => history.push('/payment')}>Proceed to Checkout</button>
         </div>
     );
 }
