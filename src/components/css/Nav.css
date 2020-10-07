@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+h4 {
+    font-size: 15px;
+}
 .nav__header {
     height: 40px;
     display: flex;

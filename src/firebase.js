@@ -12,11 +12,12 @@ const firebaseConfig = {
 };
 
 //init firebase with - initializeApp()
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firebaseapp = firebase.initializeApp(firebaseConfig);
 
 //real time database in firebase with - firestore()
-const database = firebaseApp.firestore();
+const database = firebaseapp.firestore();
 //handles signing in with - auth()
 const auth = firebase.auth();
 
 export { database, auth };
+

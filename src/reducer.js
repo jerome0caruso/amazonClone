@@ -29,6 +29,14 @@ const reducer = (state, action) => {
                 createID: createID
 
             };
+
+        case 'EMPTY_BASKET':
+            return {
+                ...state,
+                baseket: []
+            }
+            
+
         case 'REMOVE_FROM_BASKET':
             const index = state.basket.findIndex( // finding the single item that equals the id and remove it
                 (basketItem => {
